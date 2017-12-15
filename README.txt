@@ -1,0 +1,1 @@
+The testing device should have internet connectivity. home.html is the single html page of the website. There is a manual slider below the navigation menu. HTML, CSS and JAVASCRIPT are used for design of the page.
