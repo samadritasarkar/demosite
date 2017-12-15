@@ -1,0 +1,107 @@
+body {
+    background: white url("background.png");
+}
+
+.mynav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar {
+    float: left;
+    border-radius: 0;
+}
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 250px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("background.png");
+
+    /* Set a specific height */
+    height: 2300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:not(.menuclass):hover {
+    background-color: #111;
+    opacity: 1;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main{
+    margin-top: 210px;
+    box-sizing:border-box;
+}
+
+.slide-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.p {
+    margin-top: 150px;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:50%
+}
+
+.fa-facebook {
+    background: #3f51b5;
+    color: white;
+}
+
+.fa-twitter {
+    background: #00bcd4;
+    color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+    background: #3a3a3a;
+    color: white;
+}
+
+.anchor {
+    padding-top: 112px;
+    margin-top: -50px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}

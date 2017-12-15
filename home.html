@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aminia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+
+        var indexNow = 1;
+
+        var mySlides=["Aminia Restaurant, New Market", "Our Special Delight","Menu Card","Aminia Chicken Rezala","Dine Out"];
+
+        function prevSlide()
+        {
+            if(indexNow == 1)
+            {
+                indexNow=5;
+            }
+	        else
+		        indexNow--;
+            document.getElementById("image").src="image"+indexNow+".jpg";
+	        document.getElementById("text").innerHTML=mySlides[indexNow-1];
+        }
+
+        function nextSlide()
+        {
+            if(indexNow == 5)
+            {
+                indexNow=1;
+            }
+	        else
+		        indexNow++;
+            document.getElementById("image").src="image"+indexNow+".jpg";
+	        document.getElementById("text").innerHTML=mySlides[indexNow-1];
+        }
+
+        function showSlide(n)
+        {
+            document.getElementById("image").src="image"+n+".jpg";
+	        document.getElementById("text").innerHTML=mySlides[n-1];
+        }
+
+    </script>
+    <script>
+        var shiftWindow = function() { scrollBy(0, -50) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+</head>
+<body onload="load()">
+    <div class="header w3-container">
+        <div class="w3-bar w3-black">
+            <img src="logo.jpg" class="img-responsive w3-bar-item">
+            <h3 class="w3-bar-item">Aminia Family Restuarant</h3>
+        </div>
+        <div class="w3-bar w3-black">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-opacity">Home</a>
+        <a href="#aboutus" class="w3-bar-item w3-button w3-hover-opacity">About Us</a>
+        <a href="#howitworks" class="w3-bar-item w3-button w3-hover-opacity">How We Work</a>
+        <a href="#contactus" class="w3-bar-item w3-button w3-hover-opacity">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="main parallax w3-container">
+         <div>
+             <center>
+                <div class="w3-content">
+                    <img src="tag.png" class="w3-round">
+                </div>
+             </center>
+             <br>
+             <div class="slide-container">
+                 <div class="w3-content">
+                     <img src="image1.jpg" style="width:100%" id="image" class="w3-round"><br>
+                     <div><center><b id="text">Aminia Restaurant, New Market</b></center></div>
+                 </div>
+                 <div class="w3-center">
+                      <div class="w3-section">
+                        <button class="w3-button w3-light-grey" onclick="prevSlide()">❮ Prev</button>
+                        <button class="w3-button w3-light-grey" onclick="nextSlide()">Next ❯</button>
+                      </div>
+                      <div>
+                        <button class="w3-button demo" onclick="showSlide(1)">1</button>
+                        <button class="w3-button demo" onclick="showSlide(2)">2</button>
+                        <button class="w3-button demo" onclick="showSlide(3)">3</button>
+                        <button class="w3-button demo" onclick="showSlide(4)">4</button>
+                        <button class="w3-button demo" onclick="showSlide(5)">5</button>
+                      </div>
+                 </div>
+            </div>
+
+        <br>
+
+        <div>
+
+            <div>
+                <h3 id="home" class="anchor">Home</h3>
+                <p>
+                    Aminia is located in one of the busiest places in Kolkata-Garia. It is a one-stop destination for people who are in love with North Indian and Chinese cuisine. At Aminia, all your cravings for the specific authentic dishes, get an answer. To go with the flavors and ingredients, the restaurant sets an equally subtle ambiance that caters to the taste of people from different backgrounds. The considerate staff gives quick services. It is an ideal place for people who have an inclination towards non-vegetarian dishes. The nearest landmark is State Bank of India Branch.
+                </p>
+            </div>
+            <div>
+                <h3 id="aboutus" class="anchor">About Us</h3>
+                <div id="mp-tfa" style="padding:0.1em 0.6em;">
+                    <div id="mp-tfa-img" style="float: left; margin: 0.5em 0.9em 0.4em 0em;">
+                        <img src="image6.jpg" width="200" height="200" >
+                    </div>
+                    <p>
+                            Aminia is a branded chain of restaurants with twelve locations in Kolkata, India, which specialises in traditional Mughlai cuisine of Eastern India. It was founded by Mrs.Puja Bagchi in 1999. The restaurant is most noted for its special Biryani and Aminia Special. It was opened in 1929, and is a growing chain of restaurants within West Bengal. The restaurant is one of the fastest growing restaurants in Eastern India. It has been consistently ranked in the top 3 Mughlai Restaurants in Kolkata. The first outlet was opened in Zakaria Street opposite the Nakhoda Masjid.
+                            Aminia is a branded chain of restaurants with twelve locations in Kolkata, India, which specialises in traditional Mughlai cuisine of Eastern India. The restaurant is most noted for its special Biryani and Aminia Special. It was opened in 1929, and is a growing chain of restaurants within West Bengal. The restaurant is one of the fastest growing restaurants in Eastern India. It has been consistently ranked in the top 3 Mughlai Restaurants in Kolkata. The first outlet was opened in Zakaria Street opposite the Nakhoda Masjid.
+                            Aminia is a branded chain of restaurants with twelve locations in Kolkata, India, which specialises in traditional Mughlai cuisine of Eastern India. The restaurant is most noted for its special Biryani and Aminia Special. It was opened in 1929, and is a growing chain of restaurants within West Bengal. The restaurant is one of the fastest growing restaurants in Eastern India. It has been consistently ranked in the top 3 Mughlai Restaurants in Kolkata. The first outlet was opened in Zakaria Street opposite the Nakhoda Masjid.
+                            Aminia is a branded chain of restaurants with twelve locations in Kolkata, India, which specialises in traditional Mughlai cuisine of Eastern India. The restaurant is most noted for its special Biryani and Aminia Special. It was opened in 1929, and is a growing chain of restaurants within West Bengal. The restaurant is one of the fastest growing restaurants in Eastern India. It has been consistently ranked in the top 3 Mughlai Restaurants in Kolkata. The first outlet was opened in Zakaria Street opposite the Nakhoda Masjid.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3 id="howitworks" class="anchor">How We Work</h3>
+                <h5>Open from <strong>10.30AM to 10.30PM</strong></h5>
+                Order from home:<strong>03412525183</strong>
+                <h4>Our Menu Card</h4>
+
+                <table>
+                    <tr>
+                        <td>
+                            <a href="menu.jpg?w=700" data-size=700x1000 itemprop=menu class="menuclass">
+                            <img src="menu.jpg" height="200" width="200">
+                            </a>
+                        <td>
+                        <td>
+                            <a href="menu1.jpg?w=700" data-size=700x1000 itemprop=menu class="menuclass">
+                            <img src="menu1.jpg" height="200" width="200">
+                            </a>
+                        <td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3 id="contactus" class="anchor">Contact Us</h3>
+                <div>
+                    <h4>Aminia Family Restuarant</h4>
+           		 	<p>201/1, Rajarhat Road, Meena Tower Central Area, Chinar Park<br/>
+                       Kolkata - 700021,West Bengal<br/>
+                    <strong>Phone:</strong> 0341 2535578
+                    <strong>Order Number:</strong> 03412525183<br/>
+            		<strong>E-mail :</strong> aminia@gmail.com</p>
+                </div>
+                <div class="w3-center">
+                    <div class="mapouter w3-center">
+                        <div class="gmap_canvas w3-center">
+                            <iframe class="w3-center" width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=aminia restuarant&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <style>
+                            .mapouter{overflow:hidden;height:300px;width:100%;}
+                            .gmap_canvas {background:none!important;height:300px;width:100%;}
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="footer w3-container w3-blue-gray">
+        <center>
+            Name : Samadrita Sarkar
+            <br>
+            Address : RBC Road, Barasat, Kolkata-700124, West Bengal
+            <br>
+            Contact Number : 8697576553
+            <br>
+            <table>
+                <tr>
+                    <td><a href="https://www.facebook.com/samadrita.sarkar.925" target="_blank" class="fa fa-facebook" ></a></td>
+                    &nbsp
+                    <td><a href="https://twitter.com/ss20150004"  target="_blank" class="fa fa-twitter"></a></td>
+                    &nbsp
+                    <td><a href="https://www.linkedin.com/in/samadrita-sarkar-0a9845133/"  target="_blank" class="fa fa-linkedin"></a></td>
+                    &nbsp
+                    <td><a href="https://github.com/samadritasarkar" target="_blank" class="fa fa-github"></a></td>
+                </tr>
+            </table>
+            <br>
+        </center>
+    </div>
+</body>
+</html>
